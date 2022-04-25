@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Local Storage - CRUD</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>CRUD - LOCALSTORAGE</h1>
+      <form id="form">
+        <input
+          type="text"
+          autocomplete="off"
+          placeholder="add new user"
+          id="name"
+        />
+        <button class="success">
+          <i class="fas fa-plus"></i>
+        </button>
+      </form>
+      <div class="user" id="nameList">
+        <div class="user-item">
+          <p>
+            <i class="fas fa-user"></i>
+            <span>User :</span> isim
+          </p>
+          <div class="buttons">
+            <button class="primary" onclick="Edit()">
+              <i class="fas fa-edit"></i>
+              Edit
+            </button>
+            <button class="danger" onclick="Delete()">
+              <i class="fas fa-trash"></i>
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
